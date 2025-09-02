@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 body{
-    width:100%;
+    width: 100%;              /* fit-content hata ke full width */
     height: 100vh;
     display:flex;
-    justify-content:center ;
+    justify-content:center;
     align-items: center;
-    background: #f5f5f5; /* optional */
 }
 .calculater{
-    border: 2px solid rgb(207, 196, 207);
+    border: 2px solid 5.6 rgb(221, 12, 12);
     padding: 20px;
     border-radius: 18px;
     background: rgba(15, 14, 15, 0.5);
     box-shadow: 2px 4px 18px rgba(12, 10, 11, 0.5);
-    max-width: 100%;
+    width: 100%;               /* responsive width */
+    max-width: 400px;         /* center me fixed max size */
 }
 
 /* ✅ Input Responsive */
@@ -31,8 +31,13 @@ input{
     text-align: right;
     cursor:pointer;
     border:none;
-    box-shadow: 2px 4px 18px rgba(25, 25, 26, 0.5);
+    background:whitesmoke;
+    box-shadow: 
+        2px 1px 1px rgba(25, 25, 26, 0.5),
+        inset -3px -3px 6px rgba(39, 23, 23, 0.7), /* upar-left se light */
+        inset 1px 1px 1px rgba(167, 64, 64, 0.2);        /* niche-right se depth */
 }
+
 input::placeholder{
     color: black;
     text-align: right;
@@ -40,6 +45,7 @@ input::placeholder{
 
 /* ✅ Buttons Grid */
 .buttons{
+    width: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -49,11 +55,11 @@ button{
     border: none;
     width:60px;
     height: 60px;
-    margin: 8px;
+    margin: 13px;
     border-radius: 50%;
     background: transparent;
     color:white;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     box-shadow: 3px 3px 15px rgba(15, 2, 2, 0.5);
     cursor: pointer;
     transition: 0.2s ease;
@@ -63,6 +69,7 @@ button{
 }
 .operater{
     color:#022b12;
+
 }
 button:hover{
     background-color: rgb(51, 230, 31);
@@ -70,6 +77,7 @@ button:hover{
 .operater:hover{
     color:rgb(228, 225, 228);
     background-color: black;
+    color: orchid;
 }
 
 /* ✅ Responsive Design */
@@ -77,14 +85,16 @@ button:hover{
     .calculater{
         width: 90%;
         padding: 15px;
+        background-color: #022b12;
     }
     input{
         height: 60px;
         font-size: 1.8rem;
+        color: whitesmoke;
     }
     button{
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
         font-size: 1.2rem;
         margin: 6px;
     }
@@ -100,4 +110,16 @@ button:hover{
         height: 45px;
         font-size: 1rem;
     }
+    .operater{
+    color:yellowgreen;
+
+}
+button:hover{
+    background-color: rgb(51, 230, 31);
+}
+.operater:hover{
+    color:rgb(228, 225, 228);
+    background-color: black;
+
+}
 }
