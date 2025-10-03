@@ -88,32 +88,46 @@ button:hover{
         background-color: #022b12;
     }
     input{
+        width: 100%;
         height: 60px;
         font-size: 1.8rem;
-        color: whitesmoke;
+        color:black;
     }
     button{
-        width: 55px;
+        width: 55PX;
         height: 55px;
         font-size: 1.2rem;
         margin: 6px;
-    }
-}
-
-@media (max-width: 400px){
-    input{
-        height: 50px;
-        font-size: 1.5rem;
-    }
-    button{
-        width: 45px;
-        height: 45px;
-        font-size: 1rem;
+        color: azure;
     }
     .operater{
     color:yellowgreen;
+    }
 
 }
+
+@media (max-width: 400px){
+   .calculater{
+        width: 90%;
+        padding: 15px;
+        background-color: #022b12;
+    }
+    input{
+        width: 80%;
+        height: 60px;
+        font-size: 1.8rem;
+        color:black;
+    }
+    button{
+        width: 55PX;
+        height: 55px;
+        font-size: 1.2rem;
+        margin: 6px;
+        color: azure;
+    }
+    .operater{
+    color:yellowgreen;
+    }
 button:hover{
     background-color: rgb(51, 230, 31);
 }
